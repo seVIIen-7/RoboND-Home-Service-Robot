@@ -4,10 +4,15 @@
   <!-- Map Server -->
   <arg name="map_file" default="$(find my_robot)/maps/my_house.yaml"/>
   <node name="map_server" pkg="map_server" type="map_server" args="$(arg map_file)" />
+  <node name="map_odom_broadcaster" pkg="tf" type="static_transform_publisher" args="0 0 0 0 0 0 map odom 100"/>
+
+  <!-- test -->
+  <node name="robot_footprint_map" pkg="tf" type="static_transform_publisher" args="0 0 0 0 0 0 1 map robot_footprint 10"/>
+
   
   <!-- AMCL Node -->
   <node name="amcl" pkg="amcl" type="amcl" output="screen">
-    <remap from="scan" to="my_robot/laser/scan"/>
+    <remap from="scan" to="/scan"/>
     <param name="odom_frame_id" value="odom"/>
     <param name="odom_model_type" value="diff-corrected"/>
     <param name="base_frame_id" value="robot_footprint"/>
@@ -20,7 +25,7 @@
   
   <!-- Move Base -->
   <node name="move_base" pkg="move_base" type="move_base" respawn="false" output="screen">
-    <remap from="scan" to="my_robot/laser/scan"/>
+    <remap from="scan" to="scan"/>
     <param name="base_global_planner" value="navfn/NavfnROS" />
     <param name="base_local_planner" value="base_local_planner/TrajectoryPlannerROS"/>
     <rosparam file="$(find my_robot)/config/costmap_common_params.yaml" command="load" ns="global_costmap" />
