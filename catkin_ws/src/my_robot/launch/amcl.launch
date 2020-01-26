@@ -4,10 +4,6 @@
   <!-- Map Server -->
   <arg name="map_file" default="$(find my_robot)/maps/my_house.yaml"/>
   <node name="map_server" pkg="map_server" type="map_server" args="$(arg map_file)" />
-  <node name="map_odom_broadcaster" pkg="tf" type="static_transform_publisher" args="0 0 0 0 0 0 map odom 100"/>
-
-  <!-- test -->
-  <node name="robot_footprint_map" pkg="tf" type="static_transform_publisher" args="0 0 0 0 0 0 1 map robot_footprint 10"/>
 
   
   <!-- AMCL Node -->
@@ -17,10 +13,27 @@
     <param name="odom_model_type" value="diff-corrected"/>
     <param name="base_frame_id" value="robot_footprint"/>
     <param name="global_frame_id" value="map"/>
+    <param name="min_particles" value="100"/>
+    <param name="max_particles" value="5000"/> 
+    <param name="update_min_a" value="pi/6.0"/>
+    <param name="update_min_d" value="0.2"/>
+    
+    <!-- laser -->
+    <param name="laser_max_range" value="-1.0"/>
+    <param name="laser_max_beams" value="-1.0"/>
+    <param name="laser_z_hit" value="0.95"/>
+    <param name="laser_z_rand" value="0.05"/>
+   
+    <!-- odometry -->
+    <param name="odom_alpha1" value="0.0"/> 
+    <param name="odom_alpha2" value="0.0"/>
+    <param name="odom_alpha3" value="0.0"/>
+    <param name="odom_alpha4" value="0.0"/>
     
     <!-- Define initial pose here (can be removed) -->
     <param name="initial_pose_x" value="0.0"/>
     <param name="initial_pose_y" value="0.0"/>
+    <param name="initial_pose_a" value="-1.5707"/>
   </node>
   
   <!-- Move Base -->
