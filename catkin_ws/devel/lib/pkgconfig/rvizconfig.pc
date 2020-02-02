@@ -1,0 +1,8 @@
+prefix=/home/workspace/catkin_ws/devel
+
+Name: rvizconfig
+Description: Description of rvizconfig
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/workspace/catkin_ws/devel/lib 
+Requires: 
