@@ -205,3 +205,7 @@ add_executable(add_markers src/add_markers.cpp)
 target_link_libraries(add_markers ${catkin_LIBRARIES})
 add_dependencies(add_markers add_markers_generate_messages_cpp)
 
+add_executable(add_markers_connect src/add_markers_connect.cpp)
+target_link_libraries(add_markers_connect ${catkin_LIBRARIES})
+add_dependencies(add_markers_connect add_markers_generate_connect.cpp)
+

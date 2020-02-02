@@ -4,8 +4,12 @@
 add_markers/CMakeFiles/add_markers_connect.dir/src/add_markers_connect.cpp.o: /home/workspace/catkin_ws/src/add_markers/src/add_markers_connect.cpp
 add_markers/CMakeFiles/add_markers_connect.dir/src/add_markers_connect.cpp.o: /opt/ros/kinetic/include/geometry_msgs/Point.h
 add_markers/CMakeFiles/add_markers_connect.dir/src/add_markers_connect.cpp.o: /opt/ros/kinetic/include/geometry_msgs/Pose.h
+add_markers/CMakeFiles/add_markers_connect.dir/src/add_markers_connect.cpp.o: /opt/ros/kinetic/include/geometry_msgs/PoseWithCovariance.h
 add_markers/CMakeFiles/add_markers_connect.dir/src/add_markers_connect.cpp.o: /opt/ros/kinetic/include/geometry_msgs/Quaternion.h
+add_markers/CMakeFiles/add_markers_connect.dir/src/add_markers_connect.cpp.o: /opt/ros/kinetic/include/geometry_msgs/Twist.h
+add_markers/CMakeFiles/add_markers_connect.dir/src/add_markers_connect.cpp.o: /opt/ros/kinetic/include/geometry_msgs/TwistWithCovariance.h
 add_markers/CMakeFiles/add_markers_connect.dir/src/add_markers_connect.cpp.o: /opt/ros/kinetic/include/geometry_msgs/Vector3.h
+add_markers/CMakeFiles/add_markers_connect.dir/src/add_markers_connect.cpp.o: /opt/ros/kinetic/include/nav_msgs/Odometry.h
 add_markers/CMakeFiles/add_markers_connect.dir/src/add_markers_connect.cpp.o: /opt/ros/kinetic/include/ros/advertise_options.h
 add_markers/CMakeFiles/add_markers_connect.dir/src/add_markers_connect.cpp.o: /opt/ros/kinetic/include/ros/advertise_service_options.h
 add_markers/CMakeFiles/add_markers_connect.dir/src/add_markers_connect.cpp.o: /opt/ros/kinetic/include/ros/assert.h

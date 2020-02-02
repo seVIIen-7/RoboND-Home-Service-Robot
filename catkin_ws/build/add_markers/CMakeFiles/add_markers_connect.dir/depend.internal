@@ -5,8 +5,12 @@ add_markers/CMakeFiles/add_markers_connect.dir/src/add_markers_connect.cpp.o
  /home/workspace/catkin_ws/src/add_markers/src/add_markers_connect.cpp
  /opt/ros/kinetic/include/geometry_msgs/Point.h
  /opt/ros/kinetic/include/geometry_msgs/Pose.h
+ /opt/ros/kinetic/include/geometry_msgs/PoseWithCovariance.h
  /opt/ros/kinetic/include/geometry_msgs/Quaternion.h
+ /opt/ros/kinetic/include/geometry_msgs/Twist.h
+ /opt/ros/kinetic/include/geometry_msgs/TwistWithCovariance.h
  /opt/ros/kinetic/include/geometry_msgs/Vector3.h
+ /opt/ros/kinetic/include/nav_msgs/Odometry.h
  /opt/ros/kinetic/include/ros/advertise_options.h
  /opt/ros/kinetic/include/ros/advertise_service_options.h
  /opt/ros/kinetic/include/ros/assert.h

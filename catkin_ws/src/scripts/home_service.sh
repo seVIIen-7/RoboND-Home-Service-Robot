@@ -3,6 +3,7 @@ xterm  -e " source /opt/ros/kinetic/setup.bash; source /home/workspace/catkin_ws
 sleep 5
 xterm  -e " source /opt/ros/kinetic/setup.bash; source /home/workspace/catkin_ws/devel/setup.bash; roslaunch turtlebot_gazebo amcl_demo.launch map_file:=/home/workspace/catkin_ws/src/map/my_house.yaml" & 
 sleep 5
+# xterm  -e " source /opt/ros/kinetic/setup.bash; source /home/workspace/catkin_ws/devel/setup.bash; roslaunch turtlebot_rviz_launchers view_navigation_config.launch " & 
 xterm  -e " source /opt/ros/kinetic/setup.bash; source /home/workspace/catkin_ws/devel/setup.bash; roslaunch turtlebot_rviz_launchers view_navigation_config.launch " & 
 sleep 5
 xterm  -e " source /opt/ros/kinetic/setup.bash; source /home/workspace/catkin_ws/devel/setup.bash; rosrun pick_objects pick_objects" &

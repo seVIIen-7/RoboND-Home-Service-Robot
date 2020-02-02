@@ -166,6 +166,21 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
+add_markers/CMakeFiles/add_markers_connect.dir/rule:
+	cd /home/workspace/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 add_markers/CMakeFiles/add_markers_connect.dir/rule
+.PHONY : add_markers/CMakeFiles/add_markers_connect.dir/rule
+
+# Convenience name for target.
+add_markers_connect: add_markers/CMakeFiles/add_markers_connect.dir/rule
+
+.PHONY : add_markers_connect
+
+# fast build rule for target.
+add_markers_connect/fast:
+	cd /home/workspace/catkin_ws/build && $(MAKE) -f add_markers/CMakeFiles/add_markers_connect.dir/build.make add_markers/CMakeFiles/add_markers_connect.dir/build
+.PHONY : add_markers_connect/fast
+
+# Convenience name for target.
 add_markers/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule:
 	cd /home/workspace/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 add_markers/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule
 .PHONY : add_markers/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule
@@ -732,6 +747,33 @@ src/add_markers.cpp.s:
 	cd /home/workspace/catkin_ws/build && $(MAKE) -f add_markers/CMakeFiles/add_markers.dir/build.make add_markers/CMakeFiles/add_markers.dir/src/add_markers.cpp.s
 .PHONY : src/add_markers.cpp.s
 
+src/add_markers_connect.o: src/add_markers_connect.cpp.o
+
+.PHONY : src/add_markers_connect.o
+
+# target to build an object file
+src/add_markers_connect.cpp.o:
+	cd /home/workspace/catkin_ws/build && $(MAKE) -f add_markers/CMakeFiles/add_markers_connect.dir/build.make add_markers/CMakeFiles/add_markers_connect.dir/src/add_markers_connect.cpp.o
+.PHONY : src/add_markers_connect.cpp.o
+
+src/add_markers_connect.i: src/add_markers_connect.cpp.i
+
+.PHONY : src/add_markers_connect.i
+
+# target to preprocess a source file
+src/add_markers_connect.cpp.i:
+	cd /home/workspace/catkin_ws/build && $(MAKE) -f add_markers/CMakeFiles/add_markers_connect.dir/build.make add_markers/CMakeFiles/add_markers_connect.dir/src/add_markers_connect.cpp.i
+.PHONY : src/add_markers_connect.cpp.i
+
+src/add_markers_connect.s: src/add_markers_connect.cpp.s
+
+.PHONY : src/add_markers_connect.s
+
+# target to generate assembly for a file
+src/add_markers_connect.cpp.s:
+	cd /home/workspace/catkin_ws/build && $(MAKE) -f add_markers/CMakeFiles/add_markers_connect.dir/build.make add_markers/CMakeFiles/add_markers_connect.dir/src/add_markers_connect.cpp.s
+.PHONY : src/add_markers_connect.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -742,6 +784,7 @@ help:
 	@echo "... test"
 	@echo "... list_install_components"
 	@echo "... install/strip"
+	@echo "... add_markers_connect"
 	@echo "... std_msgs_generate_messages_nodejs"
 	@echo "... std_msgs_generate_messages_lisp"
 	@echo "... geometry_msgs_generate_messages_py"
@@ -784,6 +827,9 @@ help:
 	@echo "... src/add_markers.o"
 	@echo "... src/add_markers.i"
 	@echo "... src/add_markers.s"
+	@echo "... src/add_markers_connect.o"
+	@echo "... src/add_markers_connect.i"
+	@echo "... src/add_markers_connect.s"
 .PHONY : help
 
 

@@ -292,8 +292,21 @@ _catkin_empty_exported_target: cmake_check_build_system
 
 # fast build rule for target.
 _catkin_empty_exported_target/fast:
-	$(MAKE) -f my_robot/CMakeFiles/_catkin_empty_exported_target.dir/build.make my_robot/CMakeFiles/_catkin_empty_exported_target.dir/build
+	$(MAKE) -f slam_gmapping/slam_gmapping/CMakeFiles/_catkin_empty_exported_target.dir/build.make slam_gmapping/slam_gmapping/CMakeFiles/_catkin_empty_exported_target.dir/build
 .PHONY : _catkin_empty_exported_target/fast
+
+#=============================================================================
+# Target rules for targets named add_markers_connect
+
+# Build rule for target.
+add_markers_connect: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 add_markers_connect
+.PHONY : add_markers_connect
+
+# fast build rule for target.
+add_markers_connect/fast:
+	$(MAKE) -f add_markers/CMakeFiles/add_markers_connect.dir/build.make add_markers/CMakeFiles/add_markers_connect.dir/build
+.PHONY : add_markers_connect/fast
 
 #=============================================================================
 # Target rules for targets named std_msgs_generate_messages_nodejs
@@ -944,45 +957,6 @@ process_image: cmake_check_build_system
 process_image/fast:
 	$(MAKE) -f ball_chaser/CMakeFiles/process_image.dir/build.make ball_chaser/CMakeFiles/process_image.dir/build
 .PHONY : process_image/fast
-
-#=============================================================================
-# Target rules for targets named collision_map_creator
-
-# Build rule for target.
-collision_map_creator: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 collision_map_creator
-.PHONY : collision_map_creator
-
-# fast build rule for target.
-collision_map_creator/fast:
-	$(MAKE) -f pgm_map_creator/CMakeFiles/collision_map_creator.dir/build.make pgm_map_creator/CMakeFiles/collision_map_creator.dir/build
-.PHONY : collision_map_creator/fast
-
-#=============================================================================
-# Target rules for targets named request_publisher
-
-# Build rule for target.
-request_publisher: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 request_publisher
-.PHONY : request_publisher
-
-# fast build rule for target.
-request_publisher/fast:
-	$(MAKE) -f pgm_map_creator/CMakeFiles/request_publisher.dir/build.make pgm_map_creator/CMakeFiles/request_publisher.dir/build
-.PHONY : request_publisher/fast
-
-#=============================================================================
-# Target rules for targets named collision_map_creator_msgs
-
-# Build rule for target.
-collision_map_creator_msgs: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 collision_map_creator_msgs
-.PHONY : collision_map_creator_msgs
-
-# fast build rule for target.
-collision_map_creator_msgs/fast:
-	$(MAKE) -f pgm_map_creator/msgs/CMakeFiles/collision_map_creator_msgs.dir/build.make pgm_map_creator/msgs/CMakeFiles/collision_map_creator_msgs.dir/build
-.PHONY : collision_map_creator_msgs/fast
 
 #=============================================================================
 # Target rules for targets named actionlib_generate_messages_py
@@ -2034,6 +2008,7 @@ help:
 	@echo "... gtest"
 	@echo "... gtest_main"
 	@echo "... _catkin_empty_exported_target"
+	@echo "... add_markers_connect"
 	@echo "... std_msgs_generate_messages_nodejs"
 	@echo "... std_msgs_generate_messages_lisp"
 	@echo "... geometry_msgs_generate_messages_py"
@@ -2084,9 +2059,6 @@ help:
 	@echo "... ball_chaser_generate_messages_nodejs"
 	@echo "... _ball_chaser_generate_messages_check_deps_DriveToTarget"
 	@echo "... process_image"
-	@echo "... collision_map_creator"
-	@echo "... request_publisher"
-	@echo "... collision_map_creator_msgs"
 	@echo "... actionlib_generate_messages_py"
 	@echo "... actionlib_generate_messages_nodejs"
 	@echo "... actionlib_generate_messages_lisp"
