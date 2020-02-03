@@ -135,14 +135,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/workspace/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/workspace/catkin_ws/build/CMakeFiles /home/workspace/catkin_ws/build/rvizconfig/CMakeFiles/progress.marks
-	cd /home/workspace/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 rvizconfig/all
+	cd /home/workspace/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/workspace/catkin_ws/build/CMakeFiles /home/workspace/catkin_ws/build/rvizConfig/CMakeFiles/progress.marks
+	cd /home/workspace/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 rvizConfig/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/workspace/catkin_ws/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/workspace/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 rvizconfig/clean
+	cd /home/workspace/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 rvizConfig/clean
 .PHONY : clean
 
 # The main clean target
@@ -152,12 +152,12 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/workspace/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 rvizconfig/preinstall
+	cd /home/workspace/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 rvizConfig/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/workspace/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 rvizconfig/preinstall
+	cd /home/workspace/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 rvizConfig/preinstall
 .PHONY : preinstall/fast
 
 # clear depends

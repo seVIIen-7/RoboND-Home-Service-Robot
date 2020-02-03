@@ -11,7 +11,6 @@ find_package(catkin REQUIRED COMPONENTS
   nav_msgs
   roscpp
   visualization_msgs
-  geometry_msgs
 )
 
 ## System dependencies are found with CMake's conventions
@@ -71,7 +70,7 @@ find_package(catkin REQUIRED COMPONENTS
 ## Generate added messages and services with any dependencies listed here
 # generate_messages(
 #   DEPENDENCIES
-#   visualization_msgs
+#   nav_msgs#   visualization_msgs
 # )
 
 ################################################
@@ -106,7 +105,7 @@ find_package(catkin REQUIRED COMPONENTS
 catkin_package(
 #  INCLUDE_DIRS include
 #  LIBRARIES add_markers
-#  CATKIN_DEPENDS roscpp visualization_msgs
+#  CATKIN_DEPENDS nav_msgs roscpp visualization_msgs
 #  DEPENDS system_lib
 )
 
@@ -207,5 +206,4 @@ add_dependencies(add_markers add_markers_generate_messages_cpp)
 
 add_executable(add_markers_connect src/add_markers_connect.cpp)
 target_link_libraries(add_markers_connect ${catkin_LIBRARIES})
-add_dependencies(add_markers_connect add_markers_generate_connect.cpp)
-
+add_dependencies(add_markers_connect add_markers_generate_messages_cpp)

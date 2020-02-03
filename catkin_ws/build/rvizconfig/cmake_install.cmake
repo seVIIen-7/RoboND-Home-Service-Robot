@@ -1,4 +1,4 @@
-# Install script for directory: /home/workspace/catkin_ws/src/rvizconfig
+# Install script for directory: /home/workspace/catkin_ws/src/rvizConfig
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -33,17 +33,17 @@ if(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/workspace/catkin_ws/build/rvizconfig/catkin_generated/installspace/rvizconfig.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/workspace/catkin_ws/build/rvizConfig/catkin_generated/installspace/rvizConfig.pc")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rvizconfig/cmake" TYPE FILE FILES
-    "/home/workspace/catkin_ws/build/rvizconfig/catkin_generated/installspace/rvizconfigConfig.cmake"
-    "/home/workspace/catkin_ws/build/rvizconfig/catkin_generated/installspace/rvizconfigConfig-version.cmake"
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rvizConfig/cmake" TYPE FILE FILES
+    "/home/workspace/catkin_ws/build/rvizConfig/catkin_generated/installspace/rvizConfigConfig.cmake"
+    "/home/workspace/catkin_ws/build/rvizConfig/catkin_generated/installspace/rvizConfigConfig-version.cmake"
     )
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rvizconfig" TYPE FILE FILES "/home/workspace/catkin_ws/src/rvizconfig/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rvizConfig" TYPE FILE FILES "/home/workspace/catkin_ws/src/rvizConfig/package.xml")
 endif()
 
