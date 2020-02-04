@@ -1,6 +1,6 @@
 # Home Service Robot
 In this project, a full home service robot capable of navigating to pick up and deliver virtual objects.
-The package look like this:
+The package looks like this:
 ```
     ├──                                # Official ROS packages
     |
